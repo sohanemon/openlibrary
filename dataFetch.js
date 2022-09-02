@@ -1,4 +1,7 @@
 async function fetchData(key) {
+  $("spinner").classList.remove("hidden");
+  $("spinner").classList.add("flex");
+  $("show-all-btn").classList.add("hidden");
   const res = await fetch(`https:openlibrary.org/search.json?q=${key}`);
   const data = await res.json();
   const { docs } = data;
@@ -32,10 +35,11 @@ async function fetchData(key) {
     });
   };
 
+  $("spinner").classList.remove("flex");
+  $("spinner").classList.add("hidden");
   mapData(thisPage);
   $("show-all-btn").classList.remove("hidden");
   $("show-all-btn").onclick = () => {
-    $("card-container").innerText = "";
     mapData(nextPage);
     $("show-all-btn").classList.add("hidden");
   };
@@ -46,4 +50,4 @@ $("search").addEventListener("change", (e) => {
   fetchData(e.target.value);
 });
 
-fetchData("shakespeare");
+fetchData("sea");

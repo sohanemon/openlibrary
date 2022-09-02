@@ -44,7 +44,7 @@ function displayBook(
 
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter${id}" tabindex="-1" aria-labelledby="exampleModalCenter${id}Title" aria-modal="true" role="dialog">
   <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
-    <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+    <div class="modal-content p-4 border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
     <div class='grid grid-cols-2 gap-5 items-center text-sm text-gray-400'> <img
               class=" m-2 w-full mx-auto h-52 object-cover"
               src=${
