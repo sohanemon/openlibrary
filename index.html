@@ -384,18 +384,44 @@
     <!-- ---------------------- category gallery end ---------------------- -->
     <!-- -------------------------- fix: heading -------------------------- -->
     <h1 class="heading">Recent Books</h1>
+    <div id="second-nav" class="w-full bg-white sticky top-0 shadow-md">
+      <div class="form-floating mb-3 xl:w-96 mx-auto mt-16">
+        <input
+          id="search"
+          type="text"
+          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-gray-600 focus:outline-none"
+          id="floatingInput"
+          placeholder="Omor Ekushe Kobita"
+        />
+        <label for="floatingInput" class="text-gray-700">Search</label>
+      </div>
+    </div>
+
     <!-- ----------------------- card section start ----------------------- -->
     <!-- todo: card -->
     <section
       id="card-container"
       class="my-20 grid grid-cols-3 w-3/4 mx-auto gap-5"
     ></section>
+    <div class="flex space-x-2 justify-center">
+      <button
+        id="show-all-btn"
+        type="button"
+        data-mdb-ripple="true"
+        data-mdb-ripple-color="light"
+        class="inline-block my-10 px-6 py-2.5 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out"
+      >
+        Show more
+      </button>
+    </div>
     <!-- ------------------------ card section end ------------------------ -->
+
     <!-- ---------------------------- scripts ----------------------------- -->
-    <script src="./shortcuts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="./shortcuts.js"></script>
     <script src="./footer.js"></script>
     <script src="./displayBook.js"></script>
     <script src="./dataFetch.js"></script>
+    <script src="./offsetControl.js"></script>
   </body>
 </html>
